@@ -68,6 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Code.html" />
+    <Content Include="images\FizzBuzz\android-chrome-192x192.png" />
+    <Content Include="images\FizzBuzz\android-chrome-512x512.png" />
+    <Content Include="images\FizzBuzz\apple-touch-icon.png" />
+    <Content Include="images\FizzBuzz\favicon-16x16.png" />
+    <Content Include="images\FizzBuzz\favicon-32x32.png" />
+    <Content Include="images\FizzBuzz\favicon.ico" />
     <Content Include="Index.html" />
     <Content Include="Solve.html" />
     <Content Include="Web.config" />
@@ -76,6 +82,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\FizzBuzz\site.webmanifest" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -84,6 +91,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
