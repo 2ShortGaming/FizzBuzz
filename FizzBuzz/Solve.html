@@ -8,10 +8,64 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Coder Foundry MiniSite Template</title>
+    <title>FizzBuzz Challenge</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+
+        .fizzbuzz {
+            color: dodgerblue;
+            font-size: x-large
+        }
+
+        .fizz {
+            color: orange;
+            font-size: x-large
+        }
+
+        .buzz {
+            color: darkblue;
+            font-size: x-large
+        }
+
+
+        .btnWide {
+            width: 100%
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: lightblue;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: darkblue;
+        }
+    </style>
+
 
 </head>
 
@@ -20,7 +74,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="/Index.html">Challenge Name Here</a>
+            <a class="navbar-brand" href="/Index.html">FizzBuzz</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,13 +86,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Solve.html">Solve</a>
+                        <a class="nav-link" href="/Solve.html">Solve FizzBuzz</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Git</a>
+                        <a class="nav-link" href="#">Github</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portfolio</a>
@@ -55,20 +109,104 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">The Exercise</h1>
-                <p class="lead">This page will display your JS exercise</p>
+                <h1 class="mt-5">FizzBuzz Excerise</h1>
                 <ul class="list-unstyled">
-                    <li>The Javascript Exercise</li>
-                    <li>Is placed on this page</li>
+                    <li>Challenge</li>
+                    <li>
+                        Will you have more "Fizz" than "Buzz"? Or more "Buzz" than "Fizz"?
+                        <br /> Enter two numbers and see what the outcome is!!!
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
+    <div class="container">
+
+        <hr />
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2">
+                <input id="fbInput1" placeholder="Enter Fizz Number" />
+            </div>
+            <div class="col-2">
+                <input id="fbInput2" placeholder="Enter Buzz Number" />
+            </div>
+
+        </div>
+        <!--<div class="row">
+        <div class="col-4">
+            <button id="btnFB" class="btn btn-primary btnWide">Solve FizzBuzz</button>
+        </div>
+    </div>-->
+        <div class="container">
+            <div class="center">
+                <button id="btnFB" class="btn btn-primary btnWide">Solve FizzBuzz</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p id="fbOut"> </p>
+            </div>
+        </div>
+        
+    </div>
+    
 
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script>
+        $("#btnFB").on("click", function () {
+            let fizzNum = parseInt($("#fbInput1").val());
+            let buzzNum = parseInt($("#fbInput2").val());
+
+            let fizzMod = 0;
+            let buzzMod = 0;
+            //let output = "";
+            let output = new Array();
+
+            for (let loop = 1; loop <= 100; loop++) {
+                fizzMod = loop % fizzNum;
+                buzzMod = loop % buzzNum;
+
+                if (fizzMod == 0 && buzzMod == 0) {
+                    //output += "<span class = 'fizzbuzz'>FizzBuzz</span>, ";
+                    output.push("<span class = 'fizzbuzz'>FizzBuzz</span>")
+                }
+
+                else if (fizzMod == 0) {
+                    //output += "<span class = 'fizz'>Fizz</span>, ";
+                    output.push("<span class = 'fizz'>Fizz</span>")
+                }
+                else if (buzzMod == 0) {
+                    //output += "<span class = 'buzz'>Buzz</span>, ";
+                    output.push("<span class = 'buzz'>Buzz</span>")
+                }
+
+                else {
+                    //output += loop + ', ';
+                    output.push(loop);
+                }
+                //output += `Loop = ${loop} FizzMod = ${fizzMod} and BuzzMod = ${buzzMod} <br>`
+
+
+            }
+
+            //output = output.substr(0, output.length - 2);
+
+            $("#fbOut").html(output.join('<br />'));
+
+        });
+
+
+
+    </script>
+
+
+
 
 </body>
 
