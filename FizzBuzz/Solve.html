@@ -20,7 +20,7 @@
         }
 
         .fizz {
-            color: orange;
+            color: orangered;
             font-size: x-large
         }
 
@@ -41,6 +41,9 @@
             left: 50%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+        }
+        .divide {
+            font-size: x-large
         }
 
         /* width */
@@ -134,21 +137,22 @@
             </div>
 
         </div>
-        <!--<div class="row">
-        <div class="col-4">
-            <button id="btnFB" class="btn btn-primary btnWide">Solve FizzBuzz</button>
-        </div>
-    </div>-->
         <div class="container">
             <div class="center">
                 <button id="btnFB" class="btn btn-primary btnWide">Solve FizzBuzz</button>
             </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
         <div class="row">
-            <div class="col">
-                <p id="fbOut"> </p>
+            <div class="col-2"></div>
+            <div class="col-lg-8">     
+                <div id="fbOut"></div>
             </div>
         </div>
+   
         
     </div>
     
@@ -165,7 +169,6 @@
 
             let fizzMod = 0;
             let buzzMod = 0;
-            //let output = "";
             let output = new Array();
 
             for (let loop = 1; loop <= 100; loop++) {
@@ -173,31 +176,20 @@
                 buzzMod = loop % buzzNum;
 
                 if (fizzMod == 0 && buzzMod == 0) {
-                    //output += "<span class = 'fizzbuzz'>FizzBuzz</span>, ";
-                    output.push("<span class = 'fizzbuzz'>FizzBuzz</span>")
+                    output.push(`${loop}: <span class = 'fizzbuzz'> FizzBuzz</span>`)
                 }
-
                 else if (fizzMod == 0) {
-                    //output += "<span class = 'fizz'>Fizz</span>, ";
-                    output.push("<span class = 'fizz'>Fizz</span>")
+                    output.push(`${loop}: <span class = 'fizz'> Fizz</span>`)
                 }
                 else if (buzzMod == 0) {
-                    //output += "<span class = 'buzz'>Buzz</span>, ";
-                    output.push("<span class = 'buzz'>Buzz</span>")
+                    output.push(`${loop}: <span class = 'buzz'> Buzz</span>`)
                 }
-
                 else {
-                    //output += loop + ', ';
-                    output.push(loop);
+                    output.push(`${loop}: none`);
                 }
-                //output += `Loop = ${loop} FizzMod = ${fizzMod} and BuzzMod = ${buzzMod} <br>`
-
-
+   
             }
-
-            //output = output.substr(0, output.length - 2);
-
-            $("#fbOut").html(output.join('<br />'));
+            $("#fbOut").html(output.join(`<span class = 'divide'> |</span>`));
 
         });
 
