@@ -79,11 +79,11 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="/Index.html">FizzBuzz</a>
+            <a class="navbar-brand" href="/Index.html" style="font-family:'Comic Sans MS'">FizzBuzz</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family:'Comic Sans MS'">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="/Index.html">
@@ -97,10 +97,10 @@
                         <a class="nav-link" href="/Code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/2ShortGaming">Github</a>
+                        <a class="nav-link" href="https://github.com/2ShortGaming" target="_blank">Github</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://hardcore-lamarr-114676.netlify.app/">Portfolio</a>
+                        <a class="nav-link" href="https://swaney-portfolio-cf-trn.netlify.app">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
@@ -114,7 +114,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">FizzBuzz Excerise</h1>
+                <h1 class="mt-5" style="font-family:'Comic Sans MS'">FizzBuzz Excerise</h1>
                 <ul class="list-unstyled">
                     <li>Challenge</li>
                     <li>
@@ -177,7 +177,7 @@
             let buzzMod = 0;
             let output = new Array();
 
-            for (let loop = 1; loop <= 100; loop++) {
+            for (let loop = 1; loop <= 500; loop++) {
                 fizzMod = loop % fizzNum;
                 buzzMod = loop % buzzNum;
 
@@ -193,7 +193,7 @@
                 else {
                     output.push(`${loop}: none`);
                 }
-   
+
             }
             $("#fbOut").html(output.join(`<span class = 'divide'> | </span>`));
 
