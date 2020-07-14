@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <title>FizzBuzz Challenge</title>
-    <link rel="icon" href="images/FizzBuzz/favicon.ico" />
+    <link rel="icon" href="images/favicon/favicon.ico" />
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
@@ -61,29 +61,45 @@
 
         /* Handle */
         ::-webkit-scrollbar-thumb {
-            background: lightblue;
+            background: grey;
             border-radius: 10px;
         }
 
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-                background: darkblue;
-            }
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+                background: darkgrey;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("Images/hexgrey.jpg");
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-size: cover;
+        }
+
     </style>
 
 
 </head>
 
-<body>
+<body class="bg html body">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="/Index.html" style="font-family:'Comic Sans MS'">FizzBuzz</a>
+            <a class="navbar-brand" href="/Index.html" style="font-family:'Comic Sans MS'; color:snow">FizzBuzz</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family:'Comic Sans MS'">
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family:'Comic Sans MS'; color:snow">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="/Index.html">
@@ -120,23 +136,30 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
+    <div class="container" style="font-family:'Comic Sans MS'; color:snow">
+        <div class="row h5">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5" style="font-family:'Comic Sans MS'">FizzBuzz Excerise</h1>
+                <h1 class="mt-5">FizzBuzz Excerise</h1>
                 <ul class="list-unstyled">
                     <li>Challenge</li>
-                    <li>
-                        Will you have more "Fizz" than "Buzz"? Or more "Buzz" than "Fizz"?
-                        <br /> Enter two numbers and see what the outcome is!!!
-                    </li>
                 </ul>
+                <br />
+        <div class=" row">
+            <div class="col-lg-12 text-center">
+                <p>
+                    Will you have more "Fizz" than "Buzz"? Or more "Buzz" than "Fizz"?
+                    <br /> Enter two numbers and see what the outcome is!!!
+                </p>
+            </div>
+        </div>        
+                    
+                        
+                    
+                
             </div>
         </div>
     </div>
     <div class="container">
-
-        <hr />
         <div class="row">
             <div class="col-2"></div>
             <div class="col-2"></div>
@@ -149,19 +172,19 @@
             
         </div>
         <br />
-        <div class="container">
+        <div class="container" style="color:snow;font-family:'Comic Sans MS'">
         <div class="row">
             <div class="col-4"></div>
             
-                <button id="btnFB" class="btn btn-primary tab col-2" style="margin-right:7px">Solve FizzBuzz</button>
+                <button id="btnFB" class="btn btn-dark tab col-2" style="margin-right:7px; border:double">Solve FizzBuzz</button>
             
-                <button id="btnClear" class="btn btn-success col-2" style="margin-left:5px">Clear</button>
+                <button id="btnClear" class="btn btn-dark col-2" style="margin-left:5px; border:double">Clear</button>
             </div>
         </div>
    
         <br />
         <br />
-        <div class="row">
+        <div class="row" style="color:snow; font-family:'Comic Sans MS'">
             <div class="col-2"></div>
             <div class="col-lg-8">
                 <div id="fbOut"></div>
@@ -186,7 +209,7 @@
             let buzzMod = 0;
             let output = new Array();
 
-            for (let loop = 1; loop <= 500; loop++) {
+            for (let loop = 1; loop <= 100; loop++) {
                 fizzMod = loop % fizzNum;
                 buzzMod = loop % buzzNum;
 

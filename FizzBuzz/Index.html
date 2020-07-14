@@ -9,23 +9,41 @@
     <meta name="author" content="">
 
     <title>FizzBuzz Challenge</title>
-    <link rel="icon" href="images/FizzBuzz/favicon.ico" />
+    <link rel="icon" href="images/favicon/favicon.ico" />
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("Images/hexgrey.jpg");
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
 </head>
 
-<body>
+<body class="bg">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-            <a class="navbar-brand" href="/Index.html" style="font-family:'Comic Sans MS'">FizzBuzz</a>
+        <div class="container" style="color:snow; font-family:'Comic Sans MS'">
+            <a class="navbar-brand" href="/Index.html">FizzBuzz</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family:'Comic Sans MS'">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="/Index.html">
@@ -62,19 +80,18 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" style="font-family:'Comic Sans MS'; color:snow; border:double; margin-top:20px">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5" style="font-family:'Comic Sans MS'">FizzBuzz Challenge</h1><br />
-                <p class="lead">You can customize the template colors</p><br />
-                <ul class="list-unstyled">
+                <h1 class="mt-5">FizzBuzz Exercise</h1><br />
+                
+                <ul class="list-unstyled h4" style="padding-left:2em; padding-right:2em; padding-top:4em; margin-bottom:50px">
                     <li>
                         By entering two numbers between 1 and 100,
                         the function will then cycle through all numbers between 1 and 100 and replace
                         any numbers divisible by your first entered number with "Fizz", as well as all numbers divisible by
                         the second with "Buzz", and any divisible by both with "FizzBuzz".
                     </li>
-                    <li>You should include information about what the code does</li>
                 </ul>
             </div>
         </div>
