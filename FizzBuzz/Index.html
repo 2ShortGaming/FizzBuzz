@@ -27,211 +27,174 @@
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css' id="Open">
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- Image Slider -->
-    <link rel="stylesheet" href="css/plagin-css/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <!-- Image Slider -->
+        <link rel="stylesheet" href="css/plagin-css/owl.carousel.css">
 
-    <!-- FONT ICONS -->
-    <link rel="stylesheet" href="icons/rik-icons/styles.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+        <!-- FONT ICONS -->
+        <link rel="stylesheet" href="icons/rik-icons/styles.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
 
-    <!--   COUSTOM CSS link  -->
-    <!--<link rel="stylesheet" href="css/style.css">-->
-    <link rel="stylesheet" href="css/style.css" />
-    <!--<link rel="stylesheet" href="css/style.css"/>-->
-    <link rel="stylesheet" href="css/responsive.css">
-
-
+        <!--   COUSTOM CSS link  -->
+        <!--<link rel="stylesheet" href="css/style.css">-->
+        <link rel="stylesheet" href="css/style.css" />
+        <!--<link rel="stylesheet" href="css/style.css"/>-->
+        <link rel="stylesheet" href="css/responsive.css">
 
 
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
 
-        .bg {
-            /* The image used */
-            background-image: url("Images/hexorg.jpg");
-            /* Full height */
-            height: 100%;
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .bldgCount {
-            font-weight: 800;
-            font-size: larger;
-        }
 
-        .btnStyle {
-            border: double;
-            color: snow;
-            margin-top: 20px;
-            width: 20%;
-        }
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
 
-        .txtStyle {
-            color: snow;
-            font-family: 'Comic Sans MS';
-        }
+            .bg {
+                /* The image used */
+                background-image: url("Images/hexorg.jpg");
+                /* Full height */
+                height: 100%;
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
 
-        .overlay-color::before {
-            content: '';
-            position: absolute;
-            background-color: rgba(32, 32, 32, 0.8);
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-        }
+            .bldgCount {
+                font-weight: 800;
+                font-size: larger;
+            }
 
-        .overlay-color-full {
-            position: relative;
-        }
+            .btnStyle {
+                border: double;
+                color: snow;
+                margin-top: 20px;
+                width: 20%;
+            }
 
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            width: 70%;
-            margin: auto;
-        }
-        .bgd {
-            background-color: #171717;
-            color: snow;
-        }
-    </style>
+            .txtStyle {
+                color: snow;
+                font-family: 'Comic Sans MS';
+            }
 
-</head>
+            .overlay-color::before {
+                content: '';
+                position: absolute;
+                background-color: rgba(32, 32, 32, 0.8);
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
 
-<body class="bg overlay-color-full overlay-color">
+            .overlay-color-full {
+                position: relative;
+            }
 
-    <!-- Navigation -->
-    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container" style="color:snow; font-family:'Comic Sans MS'">
-            <a class="navbar-brand" href="/Index.html">FizzBuzz</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/Index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Solve.html">Try It</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Code.html">Code</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/2ShortGaming/FizzBuzz" target="_blank">Github</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://swaney-portfolio-cf-trn.netlify.app" target="_blank">Portfolio</a>
-                    </li>
-                </ul>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle navbar-dark bg-dark" type="button" data-toggle="dropdown" style="color:snow">
-                        Mini Projects
-                        <span class="navbar-toggler"></span>
+            .carousel-inner > .item > img,
+            .carousel-inner > .item > a > img {
+                width: 70%;
+                margin: auto;
+            }
+
+            .bgd {
+                background-color: #171717;
+                color: snow;
+            }
+        </style>
+
+    </head>
+
+    <body class="bg overlay-color-full overlay-color">
+
+        <!-- Navigation -->
+
+        <nav class="navbar navbar-fixed-top main-navbar-top navbar-top-js navbar-home" id="main-navbar-top">
+            <div class="container relative">
+                <div class="navbar-header">
+
+                    <!-- Menu Button show Mobile view -->
+                    <button type="button" class="nav-trigger nav-trigger-animate" data-target="#js-navbar-menu">
+                        <span aria-hidden="true" class="icon"></span>
                     </button>
-                    <ul class="dropdown-menu navbar-dark bg-dark">
-                        <li><a href="https://swaney-tacocat.netlify.app" target="_blank" style="color:snow">TacocaT</a></li>
-                        <li><a href="https://swaney-sumofallfears.netlify.app" target="_blank" style="color:snow">Sum of all Fears</a></li>
-                        <li><a href="https://swaney-sunsethills.netlify.app" target="_blank" style="color:snow">Sunset Hills</a></li>
+                </div>
+                <!-- TEMPLATE LOGO LIGHT -->
+                <!--<a class="navbar-brand light-logo btn-scroll" href="#home-section"><img src="images/logo.png" alt="" class="img-responsive"></a>-->
+                <!--<a class="navbar-brand light-logo btn-scroll" href="/Index.html"></a>-->
+                <!--<div class="navbar-collapse-right hidden-xs" style="padding-right:2em">
+                    <ul class="nav navbar-left btn-scroll">
+                        <li><a class="btn-nav" href="/Index.html">SUNSET HILLS </a></li>
 
+                    </ul>
+                </div>-->
+                <!-- Main Menu List -->
+                <div class="navbar-collapse" id="js-navbar-menu">
+                    <ul class="nav navbar-nav ml-auto navbar-right" id="navbar-nav">
+                        <li><a class="btn-nav" href="/Index.html" target="_blank">Home</a></li>
+                        <li><a class="btn-nav" href="/Solve.html" target="_blank">Try It</a></li>
+                        <li><a class="btn-nav" href="/Code.html" target="_blank">Code</a></li>
+                        <li><a class="btn-nav" href="https://github.com/2ShortGaming/SunsetHills" target="_blank">GITHUB</a></li>
+                        <li><a class="btn-nav" href="https://swaney-portfolio-cf-trn.netlify.app" target="_blank">Portfolio</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </nav>-->
-    <nav class="navbar navbar-fixed-top main-navbar-top navbar-top-js navbar-home" id="main-navbar-top">
-        <div class="container relative">
-            <div class="navbar-header">
+                <!-- Right Side Navigation Button-->
+                <div class="dropdown">
+                    <div class="navbar-collapse-right">
+                        <ul class="nav navbar-nav ml-auto navbar-right btn-scroll" data-toggle="dropdown">
+                            <li><a class="nav navbar-nav ml-auto navbar-right btn-nav">MINI PROJECTS <i class="icon icon-arrow-right"></i></a></li>
 
-                <!-- Menu Button show Mobile view -->
-                <button type="button" class="nav-trigger nav-trigger-animate" data-target="#js-navbar-menu">
-                    <span aria-hidden="true" class="icon"></span>
-                </button>
-            </div>
-            <!-- TEMPLATE LOGO LIGHT -->
-            <!--<a class="navbar-brand light-logo btn-scroll" href="#home-section"><img src="images/logo.png" alt="" class="img-responsive"></a>-->
-            <!--<a class="navbar-brand light-logo btn-scroll" href="/Index.html"></a>-->
-            <!--<div class="navbar-collapse-right hidden-xs" style="padding-right:2em">
-                <ul class="nav navbar-left btn-scroll">
-                    <li><a class="btn-nav" href="/Index.html">SUNSET HILLS </a></li>
-
-                </ul>
-            </div>-->
-            <!-- Main Menu List -->
-            <div class="navbar-collapse" id="js-navbar-menu">
-                <ul class="nav navbar-nav ml-auto navbar-right" id="navbar-nav">
-                    <li><a class="btn-nav" href="/Index.html" target="_blank">Home</a></li>
-                    <li><a class="btn-nav" href="/Solve.html" target="_blank">Try It</a></li>
-                    <li><a class="btn-nav" href="/Code.html" target="_blank">Code</a></li>
-                    <li><a class="btn-nav" href="https://github.com/2ShortGaming/SunsetHills" target="_blank">GITHUB</a></li>
-                    <li><a class="btn-nav" href="https://swaney-portfolio-cf-trn.netlify.app" target="_blank">Portfolio</a></li>
-                </ul>
-            </div>
-            <!-- Right Side Navigation Button-->
-            <div class="dropdown">
-                <div class="navbar-collapse-right">
-                    <ul class="nav navbar-nav ml-auto navbar-right btn-scroll" data-toggle="dropdown">
-                        <li><a class="nav navbar-nav ml-auto navbar-right btn-nav">MINI PROJECTS <i class="icon icon-arrow-right"></i></a></li>
-
-                    </ul>
-                    <div class="dropdown-menu bgd" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" style="color:snow" href="https://swaney-tacocat.netlify.app" target="_blank">TacocaT</a>
-                        <a class="dropdown-item" style="color:snow" href="https://swaney-sunsethills.netlify.app" target="_blank">Sunset Hills</a>
-                        <a class="dropdown-item" style="color:snow" href="https://swaney-sumofallfears.netlify.app/" target="_blank">Sum of all Fears</a>
+                        </ul>
+                        <div class="dropdown-menu bgd" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" style="color:snow" href="https://swaney-tacocat.netlify.app" target="_blank">TacocaT</a>
+                            <a class="dropdown-item" style="color:snow" href="https://swaney-sunsethills.netlify.app" target="_blank">Sunset Hills</a>
+                            <a class="dropdown-item" style="color:snow" href="https://swaney-sumofallfears.netlify.app/" target="_blank">Sum of all Fears</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <!-- Page Content -->
-    <div class="container" style="color:snow; border:double; margin-top:20px">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">FizzBuzz Exercise</h1><br />
+        </nav>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- Page Content -->
+        <div class="container" style="color:snow; border:double; margin-top:20px">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="mt-5 animate__animated animate__tada">FizzBuzz Exercise</h1><br />
 
-                <ul class="list-unstyled h4" style="padding-left:2em; padding-right:2em; padding-top:2em; margin-bottom:10px">
-                    <li>
-                        Enter in two numbers between 1 and 100. The first number being "Fizz" and the second being "Buzz".
-                    </li>
-                </ul>
-                <ul class="list-unstyled h4" style="padding-left:2em; padding-right:2em; padding-top:2em; margin-bottom:50px">
-                    <li>
-                        By entering two numbers between 1 and 100,
-                        the function will then cycle through all numbers between 1 and 100 and replace
-                        any numbers divisible by your first entered number with "Fizz", as well as all numbers divisible by
-                        the second with "Buzz", and any divisible by both with "FizzBuzz".
-                    </li>
-                </ul>
+                    <ul class="list-unstyled h4" style="padding-left:2em; padding-right:2em; padding-top:2em; margin-bottom:10px">
+                        <li class="animate__animated animate__fadeInUp animate__delay-1s">
+                            Enter in two numbers between 1 and 100. The first number being "Fizz" and the second being "Buzz".
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled h4" style="padding-left:2em; padding-right:2em; padding-top:2em; margin-bottom:50px">
+                        <li class="animate__animated animate__fadeInUp animate__delay-2s">
+                            By entering two numbers between 1 and 100,
+                            the function will then cycle through all numbers between 1 and 100 and replace
+                            any numbers divisible by your first entered number with "Fizz", as well as all numbers divisible by
+                            the second with "Buzz", and any divisible by both with "FizzBuzz".
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="scripts/plagin-js/jquery-1.11.3.js"></script>
-    <script src="scripts/plagin-js/preloader.js"></script>
-    <script src="scripts/plagin-js/plagin.js"></script>
-    <script src="scripts/plagin-js/html5shiv.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    
-    <!-- Custom Script
-    ==========================================-->
-    <script src="scripts/custom-scripts.js"></script>
-    <script src="scripts/prism.js"></script>
-    <script src="scripts/main.js"></script>
-</body>
+        <!-- Bootstrap core JavaScript -->
+        <script src="scripts/plagin-js/jquery-1.11.3.js"></script>
+        <script src="scripts/plagin-js/preloader.js"></script>
+        <script src="scripts/plagin-js/plagin.js"></script>
+        <script src="scripts/plagin-js/html5shiv.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Script
+        ==========================================-->
+        <script src="scripts/custom-scripts.js"></script>
+        <script src="scripts/prism.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
 
 </html>
